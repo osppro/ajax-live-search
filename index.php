@@ -9,7 +9,7 @@
    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
    <script>
    $(document).ready(function(){
-      load_data();
+      //load_data();
       function load_data(query)
       {
          $.ajax({
