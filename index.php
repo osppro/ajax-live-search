@@ -13,7 +13,7 @@
       function load_data(query)
       {
          $.ajax({
-         url:"searchresult.php",
+         url:"search-result.php",
          method:"POST",
          data:{query:query},
          success:function(data)

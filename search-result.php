@@ -1,5 +1,5 @@
 <?php
-require ('config.php');
+require ('db.php');
 $return = '';
 if(isset($_POST["query"]))
 {
