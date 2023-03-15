@@ -1,15 +1,12 @@
 <?php
-//Database connection.
-$con = MySQLi_connect(
-   "localhost", //Server host name.
-   "root", //Database username.
-   "", //Database password.
-   "test" //Database name or anything you would like to call it.
-);
+//Database details
+$db_host = 'localhost';
+$db_username = 'root';
+$db_password = '';
+$db_name = 'test';
 
-//Check connection
-if (MySQLi_connect_errno()) {
-   echo "Failed to connect to MySQL: " . MySQLi_connect_error();
+//Create connection and select DB
+$conn = mysqli_connect($db_host, $db_username, $db_password, $db_name);
+if (mysqli_connect_errno()) {
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
-
-?>
